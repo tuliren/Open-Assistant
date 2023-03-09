@@ -9,10 +9,8 @@ on:
       - backend/**
       - website/**
   pull_request:
-    paths:
-      - oasst-shared/**
-      - backend/**
-      - website/**
+    branches:
+      - main
 
 jobs:
   test-e2e:
@@ -37,3 +35,7 @@ jobs:
         with:
           name: cypress-videos
           path: website/cypress/videos
+
+      - name: Run Stoat Action
+        uses: stoat-dev/stoat-action@v0
+        if: always()
