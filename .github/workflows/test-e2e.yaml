@@ -9,10 +9,8 @@ on:
       - backend/**
       - website/**
   pull_request:
-    paths:
-      - oasst-shared/**
-      - backend/**
-      - website/**
+    branches:
+      - main
 
 jobs:
   test-e2e:
