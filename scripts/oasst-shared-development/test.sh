@@ -6,6 +6,6 @@ pushd "$parent_path/../../oasst-shared"
 
 set -xe
 
-pytest .
+pytest . --html=index.html
 
 popd
