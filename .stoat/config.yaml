@@ -7,3 +7,15 @@ plugins:
   static_hosting:
     cypress_api_contract:
       path: website/cypress/videos/oasst_api_contract_tests.cy.ts.mp4
+    cypress_signin:
+      path: website/cypress/videos/auth/signin.cy.ts.mp4
+    cypress_label_assistant_reply:
+      path: website/cypress/videos/tasks/label_assistant_reply.cy.ts.mp4
+    cypress_label_initial_prompt:
+      path: website/cypress/videos/tasks/label_initial_prompt.cy.ts.mp4
+    cypress_label_prompter_reply:
+      path: website/cypress/videos/tasks/label_prompter_reply.cy.ts.mp4
+    cypress_no_tasks_available:
+      path: website/cypress/videos/tasks/no_tasks_available.cy.ts.mp4
+    cypress_random:
+      path: website/cypress/videos/tasks/random.cy.ts.mp4
