@@ -27,3 +27,7 @@ jobs:
       - run: npm ci
       - run: npx prisma generate
       - run: npm run build
+
+      - name: Run Stoat Action
+        uses: stoat-dev/stoat-action@v0
+        if: always()

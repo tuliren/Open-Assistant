@@ -47,6 +47,10 @@ jobs:
 
       - run: ./scripts/backend-development/stop-mock-server.sh
 
+      - name: Run Stoat Action
+        uses: stoat-dev/stoat-action@v0
+        if: always()
+
       #- uses: stefanzweifel/git-auto-commit-action@v4
       #  with:
       #    file_pattern: "docs/docs/api/openapi.json"
